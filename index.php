@@ -6,5 +6,30 @@
 </head>
 
 <body>
+<?php
+$host = 'localhost';
+
+$dbName = 'superdating';
+
+$username = 'root';
+
+$password = '';
+
+
+$dbCon = new PDO("mysql:host=".$host.";dbname=".$dbName, $username, $password);
+$sql = 'SELECT * FROM users';
+
+$stmt = $dbCon->prepare($sql);
+
+$stmt->execute();
+
+while ($row = $stmt->fetch()) 
+
+{
+
+    echo  $row[0] . " | " . $row[1] . " | " . $row[2] . "<br/>";
+
+}
+?>
 </body>
 </html>
