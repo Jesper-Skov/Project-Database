@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<!--I just want to say that I have not made this, all I have done is to modify it, so it could be used in my own use. This is where I got the codes from: http://www.afterhoursprogramming.com/tutorial/PHP/PDO/-->
 <?php
     
 $host = 'localhost';
